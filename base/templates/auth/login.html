@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %} Add Room  {% endblock %}
+{% block content %}
+    <form action="{% url 'base:login' %}" method="POST">
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        
+        {% csrf_token %}
+        <input type="text" name="username" id="username" placeholder="Enter username">
+        <input type="password" name="password" id="password" placeholder="Enter password">
+        <button type="submit"> Login </button>
+    </form>
+    <a href="{% url 'base:register' %}"> Doesn't have a account ? Register </a>
+{% endblock %}  

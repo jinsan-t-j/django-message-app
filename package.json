@@ -1,0 +1,13 @@
+{
+  "name": "messageapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deactivate": "deactivate",
+    "serve": "python3 manage.py runserver 8000"
+  },
+  "author": "Jinsan T J",
+  "license": "ISC"
+}

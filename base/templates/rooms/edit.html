@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %} Add Room  {% endblock %}
+{% block content %}
+    <form action="{% url 'base:update.room' room.id %}" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+    </form>
+{% endblock %}  

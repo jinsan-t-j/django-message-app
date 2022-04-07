@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title> {% block title %}{% endblock %}</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="robots" content="noindex, nofollow">
+
+    <meta name="google" content="notranslate" />
+
+    <!-- Open Graph Meta -->
+    <meta property="og:title" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <!-- Icons -->
+    <link rel="shortcut icon" href="">
+    <link rel="icon" sizes="192x192" type="image/png" href="">
+    <link rel="apple-touch-icon" sizes="180x180" href="">
+
+    <!-- Vendor stylesheets -->
+    <link rel="stylesheet" href="css/vendors/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        {% include 'defaults/navigation.html' %}
+
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

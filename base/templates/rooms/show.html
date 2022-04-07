@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block title %} Home page {% endblock %}
+{% block content %}
+    <h3> {{ room.name }} </h3>
+    <h3> @{{room.user}} </h3>
+    <h3> Topic: {{room.topic.name}} </h3>
+{% endblock %}  
