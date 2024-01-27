@@ -1,1 +1,1 @@
-# djange-message
+# django-message
